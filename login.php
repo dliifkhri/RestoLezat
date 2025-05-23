@@ -19,9 +19,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($user['password'] === $password) {
             $_SESSION['user'] = $username;
             $_SESSION['level'] = $level;
-
-            // ✅ Tidak redirect, hanya tampilkan pesan sukses
-            $success = "Login berhasil sebagai <strong>$username</strong> ($level)";
+            switch ($level) {
+                case 'admin':
+                    header("Location: admin.php");
+                    break;
+                case 'owner':
+                    header("Location: owner.php");
+                    break;
+                case 'kasir':
+                    header("Location: kasir.php");
+                    break;
+                case 'waiter':
+                    header("Location: waiter.php");
+                    break;
+                default:
+                    header("Location: index.php");
+                    break;
+            }
+            exit;
+            
         } else {
             $error = "Password salah!";
         }
