@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&;500;600;700;800display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+}
+.card-header {
+justify-content: center;
+
+bottom: 40px;
+margin-bottom: 5px;
+}
+
+.logo-login img {
+    width: 100px;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    left: 140px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+}
+
+.logo { 
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.logo img {
+width: 48px;
+justify-content: center;
+align-items: center;
+left: 40px;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #464646;
+}
+
+.card {
+    width: 440px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px;
+    padding: 25px 32px;
+}
+
+.card .divider { 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+    .card .divider .line {
+    height: 1px;
+    width: 100%;
+    background: #1d1d1d;
+    opacity: 0.2;
+    margin: 30px 0 16px;
+    }
+
+    .card form label{
+    color: #1d1d1d;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.03rem;
+    display: block;
+    margin-top: 12px;
+    }
+
+    .card form .custome-input input,select{
+    color: #1d1d1d;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    height: 45px;
+    letter-spacing: 0.03rem;
+    border: 1px solid #1d1d1d;
+    background: transparent;
+    outline: none;
+     border-radius: 15px;
+     text-indent: 20px;
+     margin-top: 6px;
+     transition: all 0.2s ease;
+    appearance: none;
+    }
+
+    .card form .custome-input:focus {
+        border-color: #5222fd;
+    }
+        .card form .custome-input i{
+        position: absolute;
+        font-size: 28px;
+            left: 61%;
+            right: 45%;
+            padding-top: 13px;
+        transition: all 0.3s ease;
+        }
+        .card form .custome-input input:focus + i{
+            color: #5222fd;
+        }
+
+    .card form .login {
+        width: 100%;
+        margin-top: 25px;
+        background: #6b43ff;
+        color: #fff;
+        border: none;
+        line-height: 50px;
+        font-size: 18px;
+        letter-spacing: 0.050rem;
+        cursor: pointer;
+        font-weight: 800;
+        border-radius: 4px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+    }
+
+    .card form .login:hover {
+        background: #5222fd;
+    }
+
+    .card .links{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .card .links a {
+        color: #6b43ff;
+        font-weight: 600;
+        font-size: 1rem;
+        text-decoration:  none;
+        text-underline-offset: 6px;
+        text-decoration-color: #6b43ff;
+    }
+
+    .card .links a:hover{
+        text-decoration: underline;
+
+    }

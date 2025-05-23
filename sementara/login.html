@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN RESTO</title>
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="logo">
+    <img src="img/logo.png">
+    <a href="#">Resto</a>
+    </div>
+
+<div class="card">
+     <div class="card-header">
+        <h3 style="text-align: center; margin-bottom: 5px;">Please Login</h3>
+    <hr size="1" width="100%" color="#000000">
+</div>
+        <div class="logo-login">
+            <img src="img/logo.png">
+        </div>
+   
+ <hr size="1" width="100%" color="#000000">
+
+<form method="POST"> 
+    <label for="email">Username:</label>
+    <div class="custome-input">
+        <input type="username" id="username" name="username" placeholder="Enter your Username" autocomplete="off" required>
+        <i class='bx bx-user'></i>
+    </div>
+    <label for="password">Password:</label>
+      <div class="custome-input">
+        <input type="email" id="password" name="password" placeholder="Enter your Password" autocomplete="off" required>
+        <i class='bx bx-lock-alt' ></i>
+        <label for="level" style="margin-top: 10px; display: block;">Level:</label>
+<div class="option">
+  <select id="level" name="level" required>
+    <option value="" disabled selected>Select your level</option>
+    <option value="owner">Owner</option>
+    <option value="admin">Admin</option>
+    <option value="waiter">Waiter</option>
+    <option value="kasir">Kasir</option>
+  </select>
+  <i class='bx bx-down-arrow'></i>
+</div>
+    <button class="login">Login</button>
+    <div class="links">
+        <a href="#">Reset Password</a>
+        <a href="#">Don't Have A Account?</a>
+    </div>
+
+
+
+</form>
+
+</div>
+
+
+
+</body>
+
+</html>
